@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Create Event</h1>
+    <form action="EventServlet" method="post">
+        <input type="hidden" name="action" value="create">
+        <label>Event Name:</label>
+        <input type="text" name="event_name" required><br>
+
+        <label>Event Date:</label>
+        <input type="date" name="event_date" required><br>
+
+        <label>Event Location:</label>
+        <input type="text" name="event_location"><br>
+
+        <label>Event Description:</label>
+        <textarea name="event_description"></textarea><br>
+
+        <button type="submit">Create Event</button>
+    </form>
+</body>
+</html>
 
